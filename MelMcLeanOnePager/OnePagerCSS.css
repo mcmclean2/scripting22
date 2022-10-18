@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*fonts go first in CSS file*/
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Dancing+Script:wght@600&family=Peralta&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+Mono:wght@300&family=Peralta&display=swap');
+/*apply the font*/
+	
+h1 {font-family: 'Peralta', cursive;}
+h2, h3 {font-family: 'Lobster', cursive;}
+html {font-family: 'Noto Sans Mono', monospace;}
+
+body{
+	background-color:#142483
+}
+/****************************header area****************************/
+/*for the header - background colour, padding, center align text*/
+header{
+	background-color: #CB181B;
+	text-align: center;
+	/*padding shortcut works the same as margin - tb rl*/
+	padding:80px 200px ;
+	color:antiquewhite;
+	border-style:double;
+	border-color:antiquewhite;
+	border-width:30px;
+}
+
+
+/****************************sections****************************/
+
+
+section{
+	/*all the default styles for all sections*/
+	background-color: #F7C3BE;
+	max-width:1200px;
+	color:#161616;
+	margin:0 auto;
+	padding: 50px;
+	/*this will make section size of all of content, even floating*/
+	overflow:hidden;
+	border-style:double;
+	border-color:crimson;
+	border-width:30px;
+	text-align:square;
+}
+
+
+section figure{
+	float:left;
+	margin-right:40px;
+}
+
+figcaption{
+	font-size: 10px;
+}
+
+
+
+/*override with CLASS-more than one element to look the same but not ALL elements. */
+.alternate{
+	background-color:antiquewhite;
+	
+}
+
+
+
+
+/********************************************footer********************************/
+footer{
+	background-color:#CB181B;
+	color:antiquewhite;
+	text-align:center;
+	padding: 50px;
+	/*white text, center of text, padding*/
+}
+
+/*********************styled links*************************************************/
+/*default look of link*/
+a:link{
+	color:black;
+	/***links in this order--link, visited, hover, active****/
+	
+}
+/*previously been to location in link*/
+a:visited{
+	color:darkblue;
+}
+/*when mouse is OVER element*/
+a:hover{
+	color:#F1C564;
+	/**get rid of underline*/
+	text-decoration:none;
+}
+/*when link is pressed down*/
+a:active{
+	color:red;
+}
+ /**************************button styling***************/
+button{
+	background-color:#e7e7e7;
+	padding: 16px 32px;
+	font-size:19px;
+	/*change to a pointer finger*/
+	cursor:pointer;
+	/*defualt border-same color as background*/
+	border:2px solid #e7e7e7;
+	/*add transition to fade between states*/
+	transition-duration: 0.4s;
+}
+
+button:hover{
+	background-color:#474041;
+	color:white;
+}
+
+/*************nav bar***********************************/
+
+nav{
+	display:block;
+	text-align: center;
+	font-size: 20px;
+}
+nav li:last-child{
+	border-right: none;
+}	
+
+nav ul {
+  list-style-type: none;
+  margin: 30px;
+  padding: 0;
+  overflow: hidden;
+	/*background color of bar*/
+  background-color: #142483;
+	
+}
+
+nav li {/*put list items side by each*/
+  display:inline-block;
+	border-right: 1px solid #bbb;
+	
+}
+
+nav li a:link {
+  display: block;
+  color: antiquewhite;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	/*added duration of fade*/
+	transition-duration: 0.4s;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+  background-color: red;
+}
+
+/*make a CLASS that adds sticky to navbar*/
+
+.sticky{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;}
+
+
